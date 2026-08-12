@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="D-Rime Android 앱의 개인정보처리방침"
+    />
+    <title>D-Rime 개인정보처리방침</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --background: #f5f7fa;
+        --surface: #ffffff;
+        --text: #17202a;
+        --muted: #566573;
+        --border: #d5dbe2;
+        --accent: #126b92;
+        --accent-soft: #e5f4fa;
+        --shadow: 0 16px 48px rgba(23, 32, 42, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #101418;
+          --surface: #191f24;
+          --text: #eef3f7;
+          --muted: #b7c0c8;
+          --border: #35404a;
+          --accent: #79c6e8;
+          --accent-soft: #173440;
+          --shadow: none;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR",
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.72;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.2em;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.35;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        margin: 48px 0 16px;
+        font-size: clamp(1.4rem, 4vw, 1.85rem);
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        margin: 28px 0 8px;
+        font-size: 1.12rem;
+      }
+
+      p,
+      ul {
+        margin: 12px 0;
+      }
+
+      ul {
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .subtitle,
+      .meta,
+      .muted {
+        color: var(--muted);
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1.08rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin-top: 20px;
+        font-size: 0.94rem;
+      }
+
+      .summary {
+        margin: 28px 0;
+        padding: 20px 22px;
+        border-left: 5px solid var(--accent);
+        border-radius: 10px;
+        background: var(--accent-soft);
+      }
+
+      .table-wrap {
+        margin: 18px 0;
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      table {
+        width: 100%;
+        min-width: 720px;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--accent-soft);
+        font-weight: 700;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      code {
+        padding: 0.12em 0.35em;
+        border-radius: 5px;
+        background: var(--accent-soft);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.92em;
+      }
+
+      footer {
+        margin-top: 52px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+        }
+
+        h2 {
+          margin-top: 40px;
+        }
+
+        .table-wrap {
+          overflow: visible;
+          border: 0;
+        }
+
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        table {
+          min-width: 0;
+        }
+
+        thead {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        tbody {
+          display: grid;
+          gap: 14px;
+        }
+
+        tr {
+          overflow: hidden;
+          border: 1px solid var(--border);
+          border-radius: 12px;
+        }
+
+        td {
+          padding: 12px 14px;
+          border-bottom: 1px solid var(--border);
+        }
+
+        td::before {
+          display: block;
+          margin-bottom: 3px;
+          color: var(--accent);
+          content: attr(data-label);
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>D-Rime 개인정보처리방침</h1>
+        <p class="subtitle">
+          D-Rime Android 앱에서 처리되는 데이터와 이용자의 선택권을 안내합니다.
+        </p>
+        <div class="meta" aria-label="문서 정보">
+          <span><strong>시행일:</strong> 2026년 8월 12일</span>
+          <span><strong>최종 수정일:</strong> 2026년 8월 12일</span>
+          <span><strong>적용 앱:</strong> D-Rime (<code>com.drime.app</code>)</span>
+        </div>
+
+      </header>
+
+      <section class="summary" aria-label="핵심 요약">
+        <strong>핵심 요약</strong>
+        <ul>
+          <li>D-Rime은 개발자가 운영하는 별도 회원·수집 서버를 두지 않습니다.</li>
+          <li>광고 SDK, 이용 행태 분석 SDK, 원격 오류 수집 SDK를 포함하지 않습니다.</li>
+          <li>
+            대부분의 컴패니언 데이터는 이용자의 기기 안에 저장되며, 선택한 경우에만
+            Google Drive 동기화·문서 내보내기·공유가 실행됩니다.
+          </li>
+          <li>
+            DVDPrime 웹 이용 과정의 로그인·게시글·댓글 등은 D-Rime 개발자 서버가
+            아니라 DVDPrime과 이용자 사이에서 처리됩니다.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>1. 개인정보 처리 및 문의</h2>
+        <p>
+          D-Rime의 개인정보 처리 및 이 방침에 관한 문의는
+          <a href="mailto:cluenode@gmail.com">cluenode@gmail.com</a>으로 연락해 주시기
+          바랍니다.
+        </p>
+        <p>
+          D-Rime은 DVDPrime 웹사이트 이용을 돕는 비공식 컴패니언 앱이며, DVDPrime 또는
+          Google이 직접 운영하거나 보증하는 앱이 아닙니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 처리하는 데이터와 이용 목적</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">기능</th>
+                <th scope="col">처리되는 데이터</th>
+                <th scope="col">목적·처리 위치</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="기능">DVDPrime 웹 이용</td>
+                <td data-label="처리되는 데이터">
+                  로그인 쿠키, 웹 저장소, 이용자가 열람하거나 입력한 게시글·댓글·검색어
+                  등 웹 내용
+                </td>
+                <td data-label="목적·처리 위치">
+                  공식 DVDPrime 화면 표시와 사이트 기능 제공을 위해 앱의 WebView와
+                  DVDPrime 사이에서 처리됩니다. 아이디·비밀번호를 D-Rime의 별도 데이터베이스,
+                  백업 또는 개발자 서버로 복사하지 않습니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">회원 메모</td>
+                <td data-label="처리되는 데이터">
+                  DVDPrime 회원 식별 정보, 표시 이름, 메모, 라벨, 색상, 수정·삭제 기록
+                </td>
+                <td data-label="목적·처리 위치">
+                  회원 메모 표시·편집을 위해 앱 전용 로컬 데이터베이스에 저장됩니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">최근 읽은 글·이어보기</td>
+                <td data-label="처리되는 데이터">
+                  게시판·글 식별값, URL, 제목, 댓글 상태, 읽은 시각, 제한된 스크롤 위치,
+                  목록 복원 정보
+                </td>
+                <td data-label="목적·처리 위치">
+                  읽음 표시와 이어보기를 위해 기기에 저장됩니다. 민감 게시판 기록은 별도의
+                  이용자 동의가 있을 때만 저장됩니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">활동·새 글 알림</td>
+                <td data-label="처리되는 데이터">
+                  알림 설정, 댓글·추천·구독 상태, 제한된 제목·작성자명·URL, 이용자가 저장한
+                  게시판 검색 조건과 검색어, 마지막 확인 기준값
+                </td>
+                <td data-label="목적·처리 위치">
+                  이용자가 해당 기능을 켠 경우 DVDPrime에 제한된 확인 요청을 보내고, 결과
+                  기준값과 알림 대상을 기기에 저장합니다. 원본 HTML과 로그인 쿠키를 별도
+                  데이터베이스에 저장하지 않습니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">키워드 차단</td>
+                <td data-label="처리되는 데이터">
+                  이용자가 등록한 차단 키워드, 사용 여부, 가리기·숨기기 설정
+                </td>
+                <td data-label="목적·처리 위치">
+                  화면의 제목·본문·댓글을 기기 안에서 가리기 위해 로컬로만 처리됩니다. 차단
+                  키워드는 DVDPrime 또는 개발자 서버로 전송되지 않습니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">미디어 보관함</td>
+                <td data-label="처리되는 데이터">
+                  이용자가 보관한 이미지 파일, 파일 형식·크기·해시, 원문 글 식별 정보·URL,
+                  선택적 제목·간단 메모·보관 시각
+                </td>
+                <td data-label="목적·처리 위치">
+                  이용자가 명시적으로 보관한 미디어를 관리하기 위해 앱 전용 파일과 로컬
+                  데이터베이스에 저장됩니다. 미디어 보관함은 Google Drive 동기화와 D-Rime
+                  암호화 백업에 포함되지 않습니다.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="기능">앱 설정</td>
+                <td data-label="처리되는 데이터">
+                  시작 화면, 기능 켜기·끄기, 보존 기간, 알림·미리 불러오기 선택, 마지막으로
+                  확인된 안전한 화면
+                </td>
+                <td data-label="목적·처리 위치">
+                  이용자 설정과 화면 복원을 위해 기기에 저장됩니다.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Google Drive 선택 동기화</h3>
+        <p>
+          이용자가 Google Drive 연결과 동기화를 명시적으로 선택하면 Google Play services의
+          승인 화면을 거쳐 Google Drive의 앱 전용 <code>appDataFolder</code>에 접근합니다.
+          회원 메모 등 동기화 대상은 암호화된 스냅샷으로 저장됩니다. OAuth 액세스 토큰을
+          D-Rime의 로컬 데이터베이스나 개발자 서버에 영구 저장하지 않습니다.
+        </p>
+
+        <h3>파일 저장·가져오기·공유</h3>
+        <p>
+          암호화 백업 내보내기·가져오기, 이미지 저장 및 이미지 공유는 이용자가 Android의
+          시스템 파일 선택기 또는 공유 화면에서 직접 대상을 선택한 경우에만 실행됩니다.
+          D-Rime은 공유 수신자를 자동으로 고르거나 전송하지 않습니다. 최종 파일은 이용자가
+          선택한 저장소 또는 수신 앱의 개인정보처리방침에 따라 처리될 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 외부 서비스와 데이터 전달</h2>
+        <p>D-Rime의 기능 수행 과정에서 다음 외부 서비스와 직접 통신할 수 있습니다.</p>
+        <ul>
+          <li>
+            <strong>DVDPrime:</strong> 웹 로그인, 탐색, 검색, 게시글·댓글 등 사이트 기능,
+            이용자가 켠 활동·새 글 확인
+          </li>
+          <li>
+            <strong>Google Play services 및 Google Drive:</strong> 이용자가 선택한 Google
+            계정 승인과 앱 전용 Drive 데이터 동기화
+          </li>
+          <li>
+            <strong>이용자가 선택한 문서 제공자·공유 대상:</strong> 파일 내보내기,
+            가져오기, 이미지 저장 또는 공유
+          </li>
+        </ul>
+        <p>
+          D-Rime 운영자는 이용자 데이터를 광고 목적으로 판매하지 않으며, 맞춤형 광고 또는
+          마케팅 프로파일 생성을 위해 제공하지 않습니다. 단, 법령에 따른 적법한 요구가 있는
+          경우에는 적용 법률에 따라 필요한 범위에서 대응할 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Android 권한</h2>
+        <ul>
+          <li><strong>인터넷:</strong> DVDPrime 웹 이용, 이미지 요청, 선택적 Drive 동기화</li>
+          <li>
+            <strong>네트워크 상태:</strong> 연속 읽기용 미리 불러오기를 Wi-Fi 등 이용자가
+            선택한 네트워크 조건에서만 수행
+          </li>
+          <li>
+            <strong>알림:</strong> 이용자가 켠 활동·새 글 알림 표시(Android 13 이상에서는
+            별도 승인 필요)
+          </li>
+        </ul>
+        <p>
+          위치, 연락처, 카메라, 마이크, 전화, SMS 또는 전체 저장소 접근 권한은 요청하지
+          않습니다. 백그라운드 예약 작업을 위해 Android WorkManager가 시스템 수준 권한을
+          병합할 수 있으나, 이 권한으로 위치·연락처·통화·문자 데이터에 접근하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 보유 기간과 삭제 방법</h2>
+        <ul>
+          <li>
+            회원 메모, 미디어, 최근 읽은 글 및 알림 규칙은 해당 화면에서 개별 삭제할 수
+            있습니다.
+          </li>
+          <li>
+            최근 읽은 글은 이용자가 선택한 보존 기간에 따라 정리되며, 설정에서 전체 삭제할
+            수 있습니다.
+          </li>
+          <li>
+            <strong>컴패니언 로컬 초기화</strong>를 사용하면 회원 메모, 읽음 기록, 앱 설정 등
+            D-Rime 로컬 데이터를 삭제할 수 있습니다.
+          </li>
+          <li>
+            <strong>DVDPrime 사이트 데이터 초기화</strong>를 사용하면 WebView의 쿠키, 캐시,
+            웹 저장소와 탐색 상태를 삭제할 수 있으며 DVDPrime에서 로그아웃될 수 있습니다.
+          </li>
+          <li>
+            앱을 삭제하면 앱 전용 로컬 데이터가 삭제됩니다. 이용자가 별도로 내보내거나 저장한
+            파일은 앱 삭제 후에도 선택한 저장소에 남을 수 있으므로 이용자가 직접 관리해야
+            합니다.
+          </li>
+          <li>
+            Google Drive 연결 해제는 기기의 승인 상태를 정리하지만 기존 원격 스냅샷을 모두
+            삭제하는 기능과 같지 않습니다. Drive 원격 데이터 삭제가 필요한 경우 문의처로
+            연락해 안내를 받을 수 있습니다.
+          </li>
+        </ul>
+        <p>
+          D-Rime은 자체 계정을 만들지 않습니다. DVDPrime 계정과 게시글·댓글 삭제, Google
+          계정 및 Google Drive 데이터 관리는 각 서비스가 제공하는 절차를 따라야 합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 데이터 보호</h2>
+        <ul>
+          <li>지원되는 네트워크 통신은 HTTPS를 사용합니다.</li>
+          <li>컴패니언 데이터는 Android 앱 전용 저장소에 보관합니다.</li>
+          <li>Google Drive 동기화 대상과 수동 백업 문서는 암호화된 형식으로 처리합니다.</li>
+          <li>
+            Android 자동 백업과 기기 간 자동 전송을 사용하지 않도록 앱 백업을 차단합니다.
+          </li>
+          <li>
+            로그인 쿠키, 원본 웹 HTML, 아이디·비밀번호를 D-Rime의 암호화 백업이나 Drive
+            스냅샷에 포함하지 않습니다.
+          </li>
+        </ul>
+        <p>
+          다만 어떤 전자적 저장·전송 방식도 절대적인 안전을 보장할 수는 없습니다. 앱과
+          Android, 연결된 서비스의 보안 업데이트를 적용하고 기기 잠금을 사용하는 것을
+          권장합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 아동의 개인정보</h2>
+        <p>
+          D-Rime은 아동을 대상으로 설계된 앱이 아니며, 운영자가 아동의 개인정보를 별도로
+          수집하기 위한 기능을 제공하지 않습니다. DVDPrime 이용 가능 연령과 게시판별 이용
+          조건은 DVDPrime의 정책을 따릅니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. 방침의 변경</h2>
+        <p>
+          앱 기능, 외부 서비스 또는 관련 정책이 변경되면 이 개인정보처리방침을 수정할 수
+          있습니다. 중요한 변경은 앱 또는 배포 페이지에서 알리고, 문서 상단의 최종 수정일을
+          갱신합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. 문의</h2>
+        <p>
+          개인정보 문의: <a href="mailto:cluenode@gmail.com">cluenode@gmail.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>10. 관련 서비스 정책</h2>
+        <ul>
+          <li><a href="https://dvdprime.com/">DVDPrime 웹사이트</a></li>
+          <li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
+          <li>
+            <a href="https://support.google.com/googleplay/android-developer/answer/10144311"
+              >Google Play 사용자 데이터 정책</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        이 문서는 D-Rime 앱의 현재 데이터 처리 구조를 기준으로 작성되었습니다.
+      </footer>
+    </main>
+  </body>
+</html>
