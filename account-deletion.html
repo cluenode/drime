@@ -317,12 +317,12 @@
       <header>
         <h1>D-Rime 계정 및 데이터 삭제 안내</h1>
         <p class="subtitle">
-          D-Rime Android 앱, DVDPrime 계정, Google Drive 앱 데이터를 구분하여 삭제하는
-          방법을 안내합니다.
+          D-Rime Android 앱, DVDPrime 계정과 이전 버전의 Google Drive 앱 데이터를 구분하여
+          삭제하는 방법을 안내합니다.
         </p>
         <div class="meta" aria-label="문서 정보">
           <span><strong>앱:</strong> D-Rime (<code>com.drime.app</code>)</span>
-          <span><strong>최종 수정일:</strong> 2026년 8월 12일</span>
+          <span><strong>최종 수정일:</strong> 2026년 9월 2일</span>
         </div>
         <nav class="document-links" aria-label="관련 문서">
           <a href="privacy-policy.html">개인정보처리방침</a>
@@ -337,8 +337,9 @@
         <ul>
           <li>D-Rime 개발자는 별도의 D-Rime 회원 계정이나 사용자 데이터 서버를 운영하지 않습니다.</li>
           <li>
-            앱에서 이용할 수 있는 DVDPrime 계정은 DVDPrime이, 선택적으로 연결한 Drive
-            데이터는 이용자의 Google 계정이 각각 관리합니다.
+            앱에서 이용할 수 있는 DVDPrime 계정은 DVDPrime이 관리합니다. D-Rime 1.0.13은
+            Google Drive 동기화를 제공하지 않지만 이전 버전의 Drive 데이터는 Google 계정에
+            남아 있을 수 있습니다.
           </li>
           <li>
             D-Rime 로컬 데이터는 앱 안에서 즉시 삭제할 수 있으며, 계정을 삭제하지 않고도
@@ -350,19 +351,28 @@
       <section id="local-data">
         <h2>1. D-Rime 로컬 데이터 삭제</h2>
         <p>
-          회원 메모, 최근 읽은 글, 알림 규칙, 키워드 차단 설정, 미디어 보관함 및 앱 설정처럼
-          D-Rime이 기기에 저장한 데이터는 다음 절차로 삭제할 수 있습니다.
+          최근 읽은 글과 고정 기록, 알림 규칙, 키워드 차단 설정, 미디어 보관함, 앱 설정과
+          이전 버전에서 남은 로컬 회원 메모처럼 D-Rime이 기기에 저장한 데이터는 다음 절차로
+          삭제할 수 있습니다.
         </p>
         <ol class="steps">
           <li>D-Rime의 앱 메뉴에서 <strong>설정</strong>을 엽니다.</li>
-          <li><strong>컴패니언 로컬 초기화</strong>를 선택하고 삭제 범위를 확인합니다.</li>
+          <li><strong>D-Rime 데이터 초기화</strong>를 선택하고 삭제 범위를 확인합니다.</li>
           <li>확인 화면에서 초기화를 승인하면 D-Rime의 앱 전용 로컬 데이터가 삭제됩니다.</li>
         </ol>
         <p>
+          최근 읽은 글 화면에서는 고정을 해제하거나 글을 개별 삭제할 수 있고, 전체 삭제는
+          읽음 기록과 고정한 글을 함께 삭제합니다. 고정 해제만 하면 글 행은 즉시 삭제되지 않고
+          일반 보존기간의 자동 정리 대상으로 돌아갑니다. <strong>D-Rime 데이터 초기화</strong>는
+          고정한 글과 고정 상태, 이전 버전에서 남은 로컬 회원 메모를 모두 삭제합니다.
+        </p>
+        <p>
           DVDPrime 로그인 쿠키, 웹 저장소와 웹 탐색 상태까지 지우려면 설정에서
           <strong>DVDPrime 사이트 데이터 초기화</strong>도 별도로 실행해 주세요. 앱을
-          제거하면 앱 전용 로컬 데이터가 함께 삭제되며, D-Rime은 Android 자동 백업과 기기
-          간 자동 전송을 사용하지 않습니다.
+          제거하면 앱 전용 로컬 데이터가 함께 삭제됩니다. DVDPrime 사이트 데이터 초기화는
+          최근 읽은 글과 고정 기록을 유지하며, D-Rime은 Android 자동 백업과 기기 간 자동
+          전송을 사용하지 않습니다. 1.0.13은 회원 메모 백업이나 Google Drive 복원 기능을
+          제공하지 않으므로 로컬 초기화 뒤 앱에서 복구할 수 없습니다.
         </p>
       </section>
 
@@ -379,25 +389,25 @@
           <li><strong>회원탈퇴</strong>를 선택하고 사이트가 요구하는 본인 확인 절차를 완료합니다.</li>
           <li>
             메뉴를 찾을 수 없거나 탈퇴가 처리되지 않으면 DVDPrime의
-            <a href="https://dvdprime.com/g2/bbs/board.php?bo_table=site_introduction&scrap_mode=yes&wr_id=1"
+            <a href="https://dvdprime.com/g2/bbs/board.php?bo_table=site_introduction&amp;scrap_mode=yes&amp;wr_id=1"
               >공식 사이트 연락처</a
             >를 이용합니다.
           </li>
         </ol>
         <div class="notice">
           DVDPrime 계정 탈퇴 후 게시글·댓글·신고 기록 등의 삭제, 익명화 또는 보관 여부와 기간은
-          DVDPrime의 약관과 개인정보처리방침에 따릅니다. D-Rime 로컬 데이터와 Drive 앱
-          데이터는 DVDPrime 탈퇴만으로 자동 삭제되지 않습니다.
+          DVDPrime의 약관과 개인정보처리방침에 따릅니다. D-Rime 로컬 데이터와 이전 버전의
+          Drive 앱 데이터는 DVDPrime 탈퇴만으로 자동 삭제되지 않습니다.
         </div>
       </section>
 
       <section id="drive-data">
-        <h2>3. Google Drive 앱 데이터 삭제</h2>
+        <h2>3. 이전 버전의 Google Drive 앱 데이터 삭제</h2>
         <p>
-          이용자가 Drive 동기화를 켠 경우, 암호화된 동기화 스냅샷이 이용자 Google Drive의
-          숨겨진 앱 전용 영역(<code>appDataFolder</code>)에 저장됩니다. D-Rime의
-          <strong>Drive 연결 해제</strong>는 권한 연결을 정리하지만 기존 원격 스냅샷을
-          삭제하는 작업과는 다릅니다.
+          D-Rime 1.0.13은 Google Drive 연결·동기화·연결 해제 기능을 제공하지 않습니다. 다만
+          이전 버전에서 Drive 동기화를 사용했다면 암호화된 스냅샷이 이용자 Google Drive의
+          숨겨진 앱 전용 영역(<code>appDataFolder</code>)에 남아 있을 수 있습니다. 업데이트나
+          D-Rime 데이터 초기화는 이 원격 데이터 또는 Google 계정 연결을 자동 삭제하지 않습니다.
         </p>
         <ol class="steps">
           <li>컴퓨터 웹브라우저에서 <a href="https://drive.google.com/drive/settings">Google Drive 설정</a>을 엽니다.</li>
@@ -415,9 +425,10 @@
       <section id="exported-data">
         <h2>4. 외부로 저장하거나 공유한 파일</h2>
         <p>
-          시스템 파일 선택기로 내보낸 암호화 백업, 외부 저장소에 저장한 이미지, 다른 앱으로
-          공유한 파일은 D-Rime 앱 전용 저장소 밖에 있으므로 위 초기화나 앱 제거로 삭제되지
-          않습니다. 이용자가 선택한 저장소 또는 수신 앱에서 직접 삭제해야 합니다.
+          시스템 파일 선택기로 내보낸 이전 회원 메모 백업, 보관함 ZIP, 암호화 잠금 보관함,
+          외부 저장소에 저장한 이미지·게시글 문서와 다른 앱으로 공유한 파일은 D-Rime 앱 전용
+          저장소 밖에 있으므로 위 초기화나 앱 제거로 삭제되지 않습니다. 이용자가 선택한 저장소
+          또는 수신 앱에서 직접 삭제해야 합니다.
         </p>
       </section>
 
@@ -435,7 +446,7 @@
             <tbody>
               <tr>
                 <td data-label="대상">D-Rime 로컬 데이터</td>
-                <td data-label="삭제 결과">초기화가 완료되면 앱 전용 저장소에서 즉시 삭제됩니다.</td>
+                <td data-label="삭제 결과">초기화가 완료되면 최근 읽은 글과 고정 기록을 포함한 앱 전용 데이터가 즉시 삭제됩니다.</td>
                 <td data-label="별도 보관 또는 예외">외부로 내보내거나 공유한 파일은 포함되지 않습니다.</td>
               </tr>
               <tr>
@@ -444,7 +455,7 @@
                 <td data-label="별도 보관 또는 예외">보관 기간과 게시물 처리 방식은 DVDPrime 정책을 따릅니다.</td>
               </tr>
               <tr>
-                <td data-label="대상">Google Drive 앱 데이터</td>
+                <td data-label="대상">이전 버전의 Google Drive 앱 데이터</td>
                 <td data-label="삭제 결과">이용자가 Google Drive에서 숨겨진 앱 데이터 삭제를 실행합니다.</td>
                 <td data-label="별도 보관 또는 예외">Google의 처리·표시 반영 시간과 정책이 적용됩니다.</td>
               </tr>
