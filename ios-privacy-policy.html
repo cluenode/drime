@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>D-Rime iOS 개인정보처리방침</title><style>
+      :root {
+        color-scheme: light dark;
+        --background: #f5f7fa;
+        --surface: #ffffff;
+        --text: #17202a;
+        --muted: #566573;
+        --border: #d5dbe2;
+        --accent: #126b92;
+        --accent-soft: #e5f4fa;
+        --shadow: 0 16px 48px rgba(23, 32, 42, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #101418;
+          --surface: #191f24;
+          --text: #eef3f7;
+          --muted: #b7c0c8;
+          --border: #35404a;
+          --accent: #79c6e8;
+          --accent-soft: #173440;
+          --shadow: none;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR",
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.72;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.2em;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.35;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        margin: 48px 0 16px;
+        font-size: clamp(1.4rem, 4vw, 1.85rem);
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        margin: 28px 0 8px;
+        font-size: 1.12rem;
+      }
+
+      p,
+      ul {
+        margin: 12px 0;
+      }
+
+      ul {
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .subtitle,
+      .meta,
+      .muted {
+        color: var(--muted);
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1.08rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin-top: 20px;
+        font-size: 0.94rem;
+      }
+
+      .summary {
+        margin: 28px 0;
+        padding: 20px 22px;
+        border-left: 5px solid var(--accent);
+        border-radius: 10px;
+        background: var(--accent-soft);
+      }
+
+      .table-wrap {
+        margin: 18px 0;
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      table {
+        width: 100%;
+        min-width: 720px;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--accent-soft);
+        font-weight: 700;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      code {
+        padding: 0.12em 0.35em;
+        border-radius: 5px;
+        background: var(--accent-soft);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.92em;
+      }
+
+      footer {
+        margin-top: 52px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+        }
+
+        h2 {
+          margin-top: 40px;
+        }
+
+        .table-wrap {
+          overflow: visible;
+          border: 0;
+        }
+
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        table {
+          min-width: 0;
+        }
+
+        thead {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        tbody {
+          display: grid;
+          gap: 14px;
+        }
+
+        tr {
+          overflow: hidden;
+          border: 1px solid var(--border);
+          border-radius: 12px;
+        }
+
+        td {
+          padding: 12px 14px;
+          border-bottom: 1px solid var(--border);
+        }
+
+        td::before {
+          display: block;
+          margin-bottom: 3px;
+          color: var(--accent);
+          content: attr(data-label);
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    </style></head><body><main><header><p>D-Rime · iOS</p><h1>개인정보처리방침</h1><p>시행일: 2026년 11월 6일 · 적용 대상: D-Rime iOS 1.0(10) 이상</p><p>Android 앱은 기존 Android 개인정보처리방침을 따릅니다.</p></header>
+<section><h2>1. 앱과 사이트 계정</h2><p>D-Rime은 DVDPrime의 비공식 읽기·보관 도구입니다. 별도 D-Rime 계정은 없습니다. 공개 글 읽기·최근 글·키워드 차단·보관함은 가입 없이 이용할 수 있습니다. 사이트 회원 기능은 DVDPrime의 원래 로그인·가입·댓글 화면을 사용합니다.</p></section>
+<section><h2>2. 기기에 보관하는 자료</h2><ul><li>최근 글의 출처·제목·읽은 시각·위치·고정 상태와 선택한 본문·댓글 저장본, 검색 기록</li><li>차단 키워드와 화면·탐색·저장 설정</li><li>사용자가 보관한 미디어·문서·댓글·링크, 출처·파일 정보·시각, 폴더·메모·좋아요</li><li>시스템 선택기로 직접 고른 사진·영상의 앱 전용 복사본</li></ul><p>개발자 서버에 이 로컬 자료를 자동 업로드하거나 Drive에 동기화하는 기능은 없습니다. 일반 자료는 iOS와 기기 설정에 따라 시스템 백업에 포함될 수 있습니다. 잠금 보관함은 시스템 백업에서 제외합니다.</p><p>잠금 보관함은 앱 전용 저장소·기기 인증·자동 잠금으로 접근을 제한합니다. 별도 파일 암호화 저장소라고 설명하지 않습니다. 내보내는 <code>.drimevault</code> 백업에는 비밀번호 암호화를 적용합니다.</p></section>
+<section><h2>3. 웹 연결·로그인·외부 서버</h2><p>웹 화면은 DVDPrime의 두 HTTPS 원점, 범위를 제한한 정적 미디어 서버와 Cloudflare 보안 요청을 사용합니다. 미검토 외부 HTTP(S) 요청·제3자 쿠키를 제한하고 과거 외부 웹 데이터와 알려진 광고 쿠키를 정리합니다. 광고 컨테이너 배치 자체를 제거하지는 않습니다.</p><p>DVDPrime 로그인·사이트 설정 유지를 위해 쿠키와 웹 저장소를 기기에 보관합니다. 연결 서버에는 IP·브라우저 정보·페이지/검색 요청과 사용자가 제출한 입력이 전달될 수 있습니다. 별도 앱 계정이나 자체 분석 SDK가 없다는 것이 외부 서버의 정보 처리가 없다는 뜻은 아닙니다.</p><table><thead><tr><th>대상</th><th>처리와 목적</th></tr></thead><tbody><tr><td data-label="대상">DVDPrime / 미디어 서버</td><td data-label="처리와 목적">사이트 탐색·회원 기능·요청 처리·미디어 전달. 사이트 방침은 회원 닉네임·비밀번호·이메일과 접속 IP 처리를 안내합니다.</td></tr><tr><td data-label="대상">Cloudflare</td><td data-label="처리와 목적">IP·TLS/브라우저 신호·사이트 원점 등을 이용한 자동화된 악성 요청 판별과 보안 기능 개선.</td></tr><tr><td data-label="대상">정적 CDN / Imgur 파일</td><td data-label="처리와 목적">게시글 미디어 표시와 선택한 자료 저장. 파일 요청 서버에 IP·브라우저·경로 등이 전달될 수 있습니다.</td></tr></tbody></table><p>외부 서버의 보유 기간·권리 행사는 각 운영자의 정책·절차를 따릅니다. D-Rime 개발자는 해당 서버의 회원 자료·접속 로그에 직접 접근하거나 이를 삭제할 수 없습니다.</p></section>
+<section><h2>4. 외부 영상·파일·권한</h2><p>YouTube·Instagram·X 등의 서비스 영상은 이용자의 선택으로 원본 서비스 앱이나 브라우저에서 엽니다. 앱 안에서 제공자 플레이어나 새 제공자 썸네일을 요청하지 않습니다. 직접 저장한 영상과 갤러리 영상은 기기에서 재생합니다. 외부 서비스를 연 뒤 정보 처리는 해당 서비스의 정책을 따릅니다.</p><p>파일 가져오기·내보내기·공유는 시스템 화면에서 사용자가 정한 항목·대상으로 실행합니다. 갤러리 가져오기는 선택한 항목을 복사하며 전체 사진 보관함 접근 권한을 요구하지 않습니다. 사진 저장, 사이트 사진·영상 촬영, Face ID는 해당 동작 때 iOS 권한을 사용합니다. 위치·연락처·광고 식별자 접근 기능은 없습니다.</p><p>선택한 파일 제공자·공유 앱은 전달받은 파일을 그 서비스 정책에 따라 처리할 수 있습니다.</p></section>
+<section><h2>5. 응원 구매·문의·진단</h2><p>개발자 응원의 상품·결제·거래 확인은 Apple StoreKit에서 처리합니다. 신용카드 번호·Apple 계정 비밀번호를 D-Rime이 수집하지 않습니다. iOS 진단은 앱 버전·상태를 로컬에서 표시·복사하며 자동 전송하지 않습니다. Android Sentry 보고를 iOS에 적용하지 않았습니다.</p><p>직접 문의 이메일을 보내면 회신·문제 해결을 위해 해당 문의 내용을 처리합니다. 문의 처리에 필요한 동안 보관하며 법적 보존 의무가 없는 경우 목적 달성 후 삭제합니다. 개인정보 관련 삭제 요청도 아래 문의처로 보내실 수 있습니다.</p></section>
+<section><h2>6. 보유·삭제</h2><p>최근 글은 선택한 보관 기간에 따라 정리하며 고정한 기록은 별도 삭제까지 남을 수 있습니다. 보관함 항목은 해당 화면에서 삭제합니다. 앱 설정 → 진단·초기화의 앱 데이터 초기화와 DVDPrime 웹 데이터 초기화는 별도 동작입니다. 앱을 제거해도 내보낸 파일과 서버 작성 자료는 남을 수 있습니다.</p><p>DVDPrime 탈퇴는 사이트 절차에서 요청합니다. 현재 사이트 방침은 부정 이용 방지를 위한 아이디·닉네임 보유와 작성 게시물의 유지 가능성을 안내합니다. 필요한 글·댓글은 탈퇴 전에 따로 관리해 주세요.</p><p><a href="ios-account-deletion.html">계정·자료 삭제 안내</a></p></section>
+<section><h2>7. 문의·변경</h2><p>D-Rime 앱의 개인정보·로컬 자료 문의: <a href="mailto:cluenode@gmail.com">cluenode@gmail.com</a></p><p>회원 정보의 권리 행사는 사이트 방침의 문의처를 이용해 주세요. 기능·외부 연결·처리 범위 변경 시 이 문서와 스토어 개인정보 신고를 함께 검토합니다.</p></section>
+<section><h2>8. 관련 정책</h2><ul><li><a href="https://dvdprime.com/g2/bbs/board.php?bo_table=site_introduction&amp;scrap_mode=yes&amp;wr_id=3">DVDPrime 개인정보처리방침</a></li><li><a href="https://www.cloudflare.com/turnstile-privacy-policy/">Cloudflare 보안 검증 개인정보 안내</a></li><li><a href="https://imgur.com/privacy">Imgur 개인정보처리방침</a></li><li><a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a></li></ul></section></main></body></html>

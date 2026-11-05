@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>D-Rime iOS 계정·자료 삭제 안내</title><style>
+      :root {
+        color-scheme: light dark;
+        --background: #f5f7fa;
+        --surface: #ffffff;
+        --text: #17202a;
+        --muted: #566573;
+        --border: #d5dbe2;
+        --accent: #126b92;
+        --accent-soft: #e5f4fa;
+        --shadow: 0 16px 48px rgba(23, 32, 42, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #101418;
+          --surface: #191f24;
+          --text: #eef3f7;
+          --muted: #b7c0c8;
+          --border: #35404a;
+          --accent: #79c6e8;
+          --accent-soft: #173440;
+          --shadow: none;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR",
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.72;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.2em;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.35;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        margin: 48px 0 16px;
+        font-size: clamp(1.4rem, 4vw, 1.85rem);
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        margin: 28px 0 8px;
+        font-size: 1.12rem;
+      }
+
+      p,
+      ul {
+        margin: 12px 0;
+      }
+
+      ul {
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .subtitle,
+      .meta,
+      .muted {
+        color: var(--muted);
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1.08rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin-top: 20px;
+        font-size: 0.94rem;
+      }
+
+      .summary {
+        margin: 28px 0;
+        padding: 20px 22px;
+        border-left: 5px solid var(--accent);
+        border-radius: 10px;
+        background: var(--accent-soft);
+      }
+
+      .table-wrap {
+        margin: 18px 0;
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      table {
+        width: 100%;
+        min-width: 720px;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--accent-soft);
+        font-weight: 700;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      code {
+        padding: 0.12em 0.35em;
+        border-radius: 5px;
+        background: var(--accent-soft);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.92em;
+      }
+
+      footer {
+        margin-top: 52px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+        }
+
+        h2 {
+          margin-top: 40px;
+        }
+
+        .table-wrap {
+          overflow: visible;
+          border: 0;
+        }
+
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        table {
+          min-width: 0;
+        }
+
+        thead {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        tbody {
+          display: grid;
+          gap: 14px;
+        }
+
+        tr {
+          overflow: hidden;
+          border: 1px solid var(--border);
+          border-radius: 12px;
+        }
+
+        td {
+          padding: 12px 14px;
+          border-bottom: 1px solid var(--border);
+        }
+
+        td::before {
+          display: block;
+          margin-bottom: 3px;
+          color: var(--accent);
+          content: attr(data-label);
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    </style></head><body><main><header><p>D-Rime · iOS</p><h1>계정·자료 삭제 안내</h1><p>시행일: 2026년 11월 6일 · D-Rime iOS 1.0(10) 이상</p></header>
+<section><h2>별도 앱 계정은 없습니다</h2><p>앱의 로컬 자료 삭제, 사이트 회원 탈퇴, 내보낸 파일 삭제는 서로 다른 절차입니다.</p></section>
+<section><h2>1. 로컬 자료</h2><p>최근 글·보관함 항목은 각 화면에서 삭제할 수 있습니다. 전체 로컬 자료를 지우려면 앱 기능 → 앱 설정 → 진단·초기화 → D-Rime 데이터 전체 초기화에서 설명을 확인하고 실행합니다. 보관함 파일·폴더·메모와 읽기·검색·설정 등 앱 자료가 삭제됩니다. 중요한 자료는 필요하면 삭제 전에 직접 백업해 주세요.</p><p>이 동작은 DVDPrime 서버의 계정·작성 글·댓글이나 Safari 데이터를 삭제하지 않습니다.</p></section>
+<section><h2>2. 사이트 로그인·웹 저장소</h2><p>앱 설정 → 진단·초기화 → DVDPrime 웹 데이터 초기화는 이 앱의 WebKit 쿠키·캐시·웹 저장소와 열린 페이지 기록을 삭제합니다. 로그아웃되며 작성 중인 입력과 새 창이 사라질 수 있습니다. 최근 글·로컬 보관함은 별도입니다.</p></section>
+<section><h2>3. DVDPrime 회원 탈퇴와 작성 자료</h2><p>로그인한 뒤 사이트의 회원 탈퇴 기능에서 요청하고 사이트의 본인 확인을 직접 완료합니다. 앱 삭제·초기화는 탈퇴를 대신하지 않습니다.</p><p>탈퇴 후 아이디·닉네임과 게시물의 보유에 관한 설명은 <a href="https://dvdprime.com/g2/bbs/board.php?bo_table=site_introduction&amp;scrap_mode=yes&amp;wr_id=3">DVDPrime의 현재 방침과 문의처</a>를 확인해 주세요. 필요한 글·댓글은 탈퇴 전에 별도로 관리합니다.</p></section>
+<section><h2>4. 내보낸 파일·시스템 백업</h2><p>ZIP·암호화 백업, 사진에 저장한 자료와 공유한 복사본은 각각의 저장소·수신 앱에서 관리합니다. 앱을 삭제해도 남을 수 있습니다. 일반 앱 자료의 시스템 백업은 iOS의 기기·백업 설정에서 관리합니다. 잠금 보관함 저장소는 시스템 백업에서 제외합니다.</p></section>
+<section><h2>문의</h2><p>앱 로컬 자료 삭제 문의: <a href="mailto:cluenode@gmail.com">cluenode@gmail.com</a></p><p>서버 회원 정보의 권리 행사는 사이트 방침의 문의처로 요청합니다. 앱 개발자가 DVDPrime 회원 자료나 Apple 시스템 백업을 직접 삭제할 수는 없습니다.</p><p><a href="ios-privacy-policy.html">iOS 개인정보처리방침</a></p></section></main></body></html>
