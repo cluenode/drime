@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>D-Rime iOS 도움말과 문의</title><style>
+      :root {
+        color-scheme: light dark;
+        --background: #f5f7fa;
+        --surface: #ffffff;
+        --text: #17202a;
+        --muted: #566573;
+        --border: #d5dbe2;
+        --accent: #126b92;
+        --accent-soft: #e5f4fa;
+        --shadow: 0 16px 48px rgba(23, 32, 42, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #101418;
+          --surface: #191f24;
+          --text: #eef3f7;
+          --muted: #b7c0c8;
+          --border: #35404a;
+          --accent: #79c6e8;
+          --accent-soft: #173440;
+          --shadow: none;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR",
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.72;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.2em;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.35;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        margin: 48px 0 16px;
+        font-size: clamp(1.4rem, 4vw, 1.85rem);
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        margin: 28px 0 8px;
+        font-size: 1.12rem;
+      }
+
+      p,
+      ul {
+        margin: 12px 0;
+      }
+
+      ul {
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .subtitle,
+      .meta,
+      .muted {
+        color: var(--muted);
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1.08rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin-top: 20px;
+        font-size: 0.94rem;
+      }
+
+      .summary {
+        margin: 28px 0;
+        padding: 20px 22px;
+        border-left: 5px solid var(--accent);
+        border-radius: 10px;
+        background: var(--accent-soft);
+      }
+
+      .table-wrap {
+        margin: 18px 0;
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      table {
+        width: 100%;
+        min-width: 720px;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--accent-soft);
+        font-weight: 700;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      code {
+        padding: 0.12em 0.35em;
+        border-radius: 5px;
+        background: var(--accent-soft);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.92em;
+      }
+
+      footer {
+        margin-top: 52px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+        }
+
+        h2 {
+          margin-top: 40px;
+        }
+
+        .table-wrap {
+          overflow: visible;
+          border: 0;
+        }
+
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        table {
+          min-width: 0;
+        }
+
+        thead {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        tbody {
+          display: grid;
+          gap: 14px;
+        }
+
+        tr {
+          overflow: hidden;
+          border: 1px solid var(--border);
+          border-radius: 12px;
+        }
+
+        td {
+          padding: 12px 14px;
+          border-bottom: 1px solid var(--border);
+        }
+
+        td::before {
+          display: block;
+          margin-bottom: 3px;
+          color: var(--accent);
+          content: attr(data-label);
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    </style></head><body><main><header><p>D-Rime · iOS</p><h1>도움말과 문의</h1><p>디브이디프라임 읽기와 개인 보관함을 위한 비공식 앱</p></header>
+<section><h2>처음 이용하시나요?</h2><p>읽기 화면의 <strong>앱 기능</strong>에서 최근 읽은 글, 보관함, 고급 검색과 앱 설정을 열 수 있습니다. 별도 D-Rime 계정은 없습니다. 공개 글 읽기와 로컬 보관함은 가입 없이 이용합니다.</p><p>댓글 작성 등 DVDPrime 회원 기능은 사이트의 원래 로그인·입력 화면을 사용합니다. 사이트 이용 조건과 회원 정보는 DVDPrime이 관리합니다.</p></section>
+<section><h2>보관함에 자료 추가하기</h2><p>보관함의 갤러리 가져오기에서 시스템 선택기로 사진·영상을 고릅니다. 이미지는 원본 유지·균형·용량 절약을 선택할 수 있고 영상은 원본으로 가져옵니다. 선택한 자료는 앱 전용 복사본으로 보관하며 폴더·메모·좋아요로 정리할 수 있습니다.</p><p>잠금 보관함은 기기 인증과 자동 잠금으로 접근을 제한합니다. 잠금 저장소 자체를 별도 비밀번호로 암호화하는 방식은 아니며, 내보내는 <code>.drimevault</code> 백업을 비밀번호로 암호화합니다. 백업 비밀번호는 복구할 수 없으니 직접 안전하게 보관해 주세요.</p></section>
+<section><h2>글과 영상 이용 안내</h2><p>최근 글에서 읽던 글을 다시 찾을 수 있습니다. 본문·댓글의 오프라인 저장은 앱 설정에서 선택한 범위에 적용됩니다. 서비스 영상은 원본 서비스 앱이나 브라우저로 열며, 직접 보관한 영상과 갤러리 영상은 기기에서 재생합니다.</p><p>D-Rime은 DVDPrime의 공식 앱이 아닙니다. 사이트 구조·이용 정책이나 외부 연결 상태에 따라 일부 편의 기능이 달라질 수 있습니다.</p></section>
+<section><h2>문제가 생겼을 때</h2><p>앱 이름과 버전, 사용 중인 iPhone/iPad와 iOS 버전, 문제가 생긴 화면·순서를 알려 주세요. 로그인 비밀번호, 백업 비밀번호, 개인 보관 미디어는 보내지 않으셔도 됩니다. 앱 설정의 진단·초기화에서 버전과 로컬 진단 정보를 확인할 수 있습니다.</p><p>초기화는 자료를 삭제하므로 중요한 자료를 먼저 직접 백업하고 각 동작의 설명을 확인해 주세요. 앱 자료 초기화와 DVDPrime 웹 데이터 초기화는 서로 다릅니다.</p></section>
+<section><h2>문의</h2><p>앱 이용·개인정보·로컬 자료 문의: <a href="mailto:cluenode@gmail.com?subject=D-Rime%20iOS">cluenode@gmail.com</a></p><p>사이트 회원 탈퇴·게시물·신고 관련 문의는 DVDPrime의 현재 정책과 문의처를 이용해 주세요.</p><ul><li><a href="ios-privacy-policy.html">iOS 개인정보처리방침</a></li><li><a href="ios-account-deletion.html">계정·자료 삭제 안내</a></li></ul></section></main></body></html>
